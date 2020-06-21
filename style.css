@@ -1,0 +1,301 @@
+/* css reset */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* all */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+section {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.content {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #000;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 45px;
+  font-family: "蘋方-繁", PingFang, sans-serif;
+  font-weight: 500;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+  padding-top: 8px;
+}
+
+span {
+  font-size: 24px;
+  line-height: 32px;
+  color: #a00404;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+li {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "蘋方-繁", PingFang, sans-serif;
+  font-weight: lighter;
+}
+
+
+/* name & photo */
+
+.name {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: Andale Mono, sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  margin-bottom: 48px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #000;
+  padding-top: 24px;
+}
+
+.name img {
+  width: 324px;
+  height: 324px;
+  margin-bottom: 48px;
+}
+
+
+/* profile */
+
+.profile li {
+  margin-left: 16px;
+}
+
+.profile p {
+  margin-left: 32px;
+}
+
+.profile li:first-child p:first-child::before {
+  content: "";
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  margin-right: 16px;
+  margin-left: -32px;
+  display: inline-block;
+}
+
+.profile li:first-child {
+  margin-bottom: 24px;
+}
+
+
+/* education */
+
+.edu ul {
+  position: relative;
+}
+
+.edu ul::before {
+  content: "";
+  border: 1px solid #96A9C4;
+  position: absolute;
+  height: 65px;
+  left: 24px;
+  top: 12px;
+}
+
+.edu li {
+  margin-left: 16px;
+}
+
+.edu li:first-child {
+  margin-bottom: 32px;
+}
+
+.edu li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+
+/* skill */
+
+.skill {
+  background-color: #96a9c4;
+  height: 360px;
+  position: relative;
+  margin: 154px auto;
+}
+
+.skill .content {
+  background-color: #415165;
+  padding: 24px 0px 56px 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.skill ul {
+  display: inline-block;
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+}
+
+.skill li {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.skill li:last-child {
+  margin-bottom: 0;
+}
+
+.skill h2, .skill span, .skill li {
+  color: #fff;
+}
+
+.skill h2::after {
+  content: "";
+  width: 996px;
+  border-color: #fff;
+  margin: auto auto 40px auto;
+}
+
+
+/* work experience */
+
+.work {}
+
+.work ul {
+  width: 640px;
+  margin-left: 16px;
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+}
+
+.work li {
+  font-family: "蘋方-繁", PingFang, sans-serif;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+.work li:last-child {
+  margin-bottom: 0;
+}
+
+.work .detail {
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.work img {
+  padding: 8px 0;
+}
+
+
+/* contact method */
+
+.contact {
+  background-color: #415165;
+  margin-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 45px;
+}
+
+.contact h2, .contact span, .contact li {
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2::after {
+  content: "";
+  border-color: #fff;
+  margin: auto auto 32px auto;
+}
+
+.contact li {
+  margin-bottom: 16px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+}
+
+.social li:nth-child(2) {
+  margin: auto 24px;
+}
